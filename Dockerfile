@@ -32,7 +32,7 @@ RUN mkdir /nginx && \
 
 RUN chown -R www-data:www-data /nginx
 
-# Set up config file
+# Overwrite default config file
 COPY nginx.conf /usr/local/nginx/conf/nginx.conf
 
 EXPOSE 1935 8080
