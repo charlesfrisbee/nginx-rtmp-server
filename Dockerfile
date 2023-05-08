@@ -32,10 +32,6 @@ RUN mkdir /nginx && \
 
 RUN chown -R www-data:www-data /nginx
 
-# # Forward logs to Docker
-# RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
-#     ln -sf /dev/stderr /var/log/nginx/error.log
-
 # Set up config file
 COPY nginx.conf /usr/local/nginx/conf/nginx.conf
 
