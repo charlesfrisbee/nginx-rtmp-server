@@ -7,7 +7,7 @@ ENV NGINX_VERSION nginx-1.17.3
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y build-essential libpcre3 libpcre3-dev libssl-dev zlib1g zlib1g-dev software-properties-common
+    apt-get install -y build-essential libpcre3 libpcre3-dev libssl-dev zlib1g zlib1g-dev certbot python3-certbot-nginx
 
 # Download and decompress Nginx
 RUN wget -O ${NGINX_VERSION}.tar.gz https://nginx.org/download/${NGINX_VERSION}.tar.gz && \
@@ -35,18 +35,5 @@ RUN chown -R www-data:www-data /nginx
 # Overwrite default config file
 COPY nginx.conf /usr/local/nginx/conf/nginx.conf
 
-#####
-####
-###
-####
-#####
-
-# Maybe I need to expose port 443 instead of 8080 when I want to run it on SSL
-
-
-####
-####
-###
-##
-EXPOSE 1935 8080
+EXPOSE 1935 80
 CMD ["/usr/local/nginx/sbin/nginx", "-g", "daemon off;"]
