@@ -1,0 +1,43 @@
+﻿-- logger module started --
+main: Running vlc with the default interface. Use 'cvlc' to use vlc without interface.
+main: playlist is empty
+access error: HTTP 404 error
+access error: HTTP 404 error
+access error: HTTP 404 error
+access error: HTTP 404 error
+access error: HTTP 404 error
+adaptive: Changing stream format Unknown -> TS
+videotoolbox: Using Video Toolbox to decode 'h264'
+mpeg4audio: AAC channels: 2 samplerate: 48000
+videotoolbox: Using Video Toolbox to decode 'h264'
+videotoolbox: vt cvpx chroma: 420v
+videotoolbox: Raising max DPB to 3
+adaptive: Ending demuxer stream. [discontinuity]
+main error: Timestamp conversion failed for 95453517678: no reference clock
+main error: Could not convert timestamp 0 for videotoolbox
+videotoolbox: Using Video Toolbox to decode 'h264'
+main error: buffer deadlock prevented
+main error: buffer deadlock prevented
+mpeg4audio: AAC channels: 2 samplerate: 48000
+adaptive: Ending demuxer stream. [discontinuity]
+videotoolbox: Using Video Toolbox to decode 'h264'
+main error: buffer deadlock prevented
+main error: buffer deadlock prevented
+mpeg4audio: AAC channels: 2 samplerate: 48000
+adaptive: Ending demuxer stream. [discontinuity]
+adaptive: Changing stream format Unknown -> TS
+videotoolbox: Using Video Toolbox to decode 'h264'
+mpeg4audio: AAC channels: 2 samplerate: 48000
+videotoolbox: Using Video Toolbox to decode 'h264'
+videotoolbox: vt cvpx chroma: 420v
+videotoolbox: Raising max DPB to 3
+main error: buffer deadlock prevented
+adaptive: Ending demuxer stream. [discontinuity]
+main error: Timestamp conversion failed for 34800001: no reference clock
+main error: Could not convert timestamp 0 for videotoolbox
+videotoolbox: Using Video Toolbox to decode 'h264'
+main error: buffer deadlock prevented
+main error: buffer deadlock prevented
+mpeg4audio: AAC channels: 2 samplerate: 48000
+adaptive: Ending demuxer stream. [discontinuity]
+-- logger module stopped --
